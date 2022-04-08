@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#E8323235"
+tools:context=".MainActivity">
+
+<Button
+    android:id="@+id/btnCalcula"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="52dp"
+    android:backgroundTint="#000000"
+    android:foregroundTint="#444447"
+    android:text="CALCULA"
+    android:textColor="#444447"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/btnExibe"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<Button
+    android:id="@+id/btnSai"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="52dp"
+    android:backgroundTint="#000000"
+    android:text="SAI"
+    android:textColor="#444447"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/btnExibe" />
+
+<Button
+    android:id="@+id/btnExibe"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="52dp"
+    android:backgroundTint="#000000"
+    android:text="EXIBE"
+    android:textColor="#444447"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/btnSai"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/btnCalcula" />
+
+<EditText
+    android:id="@+id/txtNome"
+    android:layout_width="254dp"
+    android:layout_height="54dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:ems="10"
+    android:fontFamily="sans-serif"
+    android:foregroundTint="#FFFFFF"
+    android:hint="Digite seu nome"
+    android:inputType="textPersonName"
+    android:textColor="#000000"
+    android:textColorHint="#000000"
+    android:textColorLink="#FFFFFF"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBaseline_toBaselineOf="@+id/lblNome"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toEndOf="@+id/lblNome" />
+
+<EditText
+    android:id="@+id/txtEmail"
+    android:layout_width="254dp"
+    android:layout_height="51dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:ems="10"
+    android:hint="Digite seu e-mail"
+    android:inputType="textPersonName"
+    android:textColor="#000000"
+    android:textColorHint="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBaseline_toBaselineOf="@+id/lblEmail"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toEndOf="@+id/lblEmail" />
+
+<EditText
+    android:id="@+id/txtNota1"
+    android:layout_width="252dp"
+    android:layout_height="56dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:ems="10"
+    android:hint="Digite a nota 1"
+    android:inputType="textPersonName"
+    android:textColor="#000000"
+    android:textColorHint="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBaseline_toBaselineOf="@+id/lblNota1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toEndOf="@+id/lblNota1" />
+
+<EditText
+    android:id="@+id/txtNota2"
+    android:layout_width="251dp"
+    android:layout_height="62dp"
+    android:layout_marginEnd="32dp"
+    android:ems="10"
+    android:hint="Digite a nota 2"
+    android:inputType="textPersonName"
+    android:textColor="#000000"
+    android:textColorHint="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBaseline_toBaselineOf="@+id/lblNota2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toEndOf="@+id/lblNota2" />
+
+<ImageView
+    android:id="@+id/imgSimbolos"
+    android:layout_width="147dp"
+    android:layout_height="153dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginBottom="32dp"
+    app:layout_constraintBottom_toTopOf="@+id/lblNome"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.062"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0"
+    app:srcCompat="@drawable/calc" />
+
+<TextView
+    android:id="@+id/lblNota1"
+    android:layout_width="90dp"
+    android:layout_height="43dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="20dp"
+    android:fontFamily="sans-serif"
+    android:text="Nota 1:"
+    android:textColor="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/lblEmail" />
+
+<TextView
+    android:id="@+id/lblNota2"
+    android:layout_width="90dp"
+    android:layout_height="43dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="20dp"
+    android:fontFamily="sans-serif"
+    android:text="Nota 2:"
+    android:textColor="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/lblNota1" />
+
+<TextView
+    android:id="@+id/lblMedia"
+    android:layout_width="90dp"
+    android:layout_height="43dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="32dp"
+    android:fontFamily="sans-serif"
+    android:text="Média:"
+    android:textColor="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/btnCalcula"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/lblNota2"
+    app:layout_constraintVertical_bias="0.246" />
+
+<TextView
+    android:id="@+id/lblNome"
+    android:layout_width="90dp"
+    android:layout_height="43dp"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="208dp"
+    android:fontFamily="sans-serif"
+    android:text="Nome:"
+    android:textColor="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/lblEmail"
+    android:layout_width="90dp"
+    android:layout_height="43dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="20dp"
+    android:fontFamily="sans-serif"
+    android:text="E-mail:"
+    android:textColor="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/lblNome" />
+
+<TextView
+    android:id="@+id/lblResultado"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:text="[aqui vai aparecer a média]"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintBaseline_toBaselineOf="@+id/lblMedia"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/lblMedia" />
+
+<TextView
+    android:id="@+id/lblCalculadora"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif-condensed-medium"
+    android:text="Calculadora"
+    android:textAlignment="center"
+    android:textColor="#000000"
+    android:textSize="44sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/lblDeMedia"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.428"
+    app:layout_constraintStart_toEndOf="@+id/imgSimbolos"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.805" />
+
+<TextView
+    android:id="@+id/lblDeMedia"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="40dp"
+    android:fontFamily="sans-serif-condensed-medium"
+    android:text="de Média"
+    android:textColor="#000000"
+    android:textSize="44sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/txtNome"
+    app:layout_constraintEnd_toEndOf="@+id/lblCalculadora"
+    app:layout_constraintStart_toEndOf="@+id/imgSimbolos"
+    app:layout_constraintStart_toStartOf="@+id/lblCalculadora" />
+</androidx.constraintlayout.widget.ConstraintLayout>
